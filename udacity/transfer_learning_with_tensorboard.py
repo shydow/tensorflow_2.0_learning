@@ -45,7 +45,7 @@ logdir="logs/fit/" + datetime.now().strftime("%Y%m%d-%H%M%S")
 tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=logdir)
 
 #%%
-EPOCHS = 10
+EPOCHS = 5
 history = model.fit_generator(
     training_dataset,
     epochs=EPOCHS,
