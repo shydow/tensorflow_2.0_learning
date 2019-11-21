@@ -15,3 +15,9 @@
     ```shell
     code .
     ```
+
+
+## docker running config 
+```shell
+docker run --runtime=nvidia -it -p 80:8888 --rm tensorflow/tensorflow:latest-gpu-py3-jupyter
+```
